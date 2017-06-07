@@ -3,7 +3,7 @@ def mean(num_list):
         print("Fail")
         raise Exception("Type of num_list is not a list")
     for num in num_list:
-        if(complex(num)):
+        if( isinstance(num, complex)):
             return NotImplemented
     try:
         return sum(num_list)/len(num_list)
