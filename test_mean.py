@@ -14,11 +14,9 @@ def test_zero():
 
 def test_double():
     # This one will fail in Python 2
-    num_list=[1.0000001,2,3,4, -.0000001]
+    num_list=[1,2,3,4]
     obs = mean(num_list)
-    print(sum(num_list))
     exp = 2.0
-    print(obs)
     assert obs == exp
 
 def test_long():
@@ -35,10 +33,4 @@ def test_complex():
     exp = NotImplemented
     assert obs == exp
 
-def test_all():
-    test_ints()
-    test_zero()
-    test_double()
-    test_long()
-    test_complex()
     
