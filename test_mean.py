@@ -16,12 +16,12 @@ def test_double():
     # This one will fail in Python 2
     num_list=[1,2,3,4]
     obs = mean(num_list)
-    exp = 2.0
+    exp = 2.5
     assert obs == exp
 
 def test_long():
     big = 100000000
-    obs = mean(range(1,big))
+    obs = mean(list(range(1,big)))
     exp = big/2.0
     assert obs == exp
 
